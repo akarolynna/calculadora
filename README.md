@@ -1,7 +1,7 @@
 # calculador
 App em Flutter com o propósito de simular uma calculadora
 
-#Protótipo das Telas
+#Protótipo das Telas.
 
 <table>
   <tr>
