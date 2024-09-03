@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const TelaInicial());
@@ -10,20 +11,17 @@ class TelaInicial extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(primaryColor: const Color(0XFFFF4F5B)),
+      theme: ThemeData(primaryColor: const Color(0XFFFF4F5B), textTheme: GoogleFonts.interTextTheme(),),
       home: Column(
           children: [
-            Center(
+            Container(
+              width:421, height: 385, margin: EdgeInsets.only(top: 140, right: 50, left: 50),
               //Container da imagem
-              child:SizedBox(
-                
-                width: 421,
-                height: 385,
-                child: Image.asset('assets/imagens/calculadora.jpg'),
-
-
+              child:Expanded(
+                child: Image.asset('assets/imagens/calculadora.jpg', width: 421, height: 387,),
               ),
-            )
+            ),
+            Text("Pitagore",textAlign: TextAlign.center, style: TextStyle(decoration: TextDecoration.none, color: Colors.black,fontWeight: FontWeight.bold, fontSize: 45,),)
           ],
         ),
       
