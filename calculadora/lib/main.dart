@@ -19,7 +19,7 @@ class TelaInicial extends StatelessWidget {
                 
                 width: 421,
                 height: 385,
-                child: Image.asset('assets/imagens/'),
+                child: Image.asset('assets/imagens/calculadora.jpg'),
 
 
               ),
